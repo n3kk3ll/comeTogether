@@ -43,14 +43,6 @@
             gap: 25px 225px;
         }
     }
-    .carousel {
-        &__slide {
-            flex-basis: 970px;
-            &-btn {
-                margin-top: 15px;
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 992px) {
@@ -98,25 +90,6 @@
         }
         &__inner {
             gap: 50px;
-        }
-    }
-    .carousel {
-        &__slide {
-            flex-basis: 750px;
-            &-title {
-                font-size: 28px;
-                line-height: 42px;
-                max-width: 180px;
-            }
-            &-descr {
-                margin: 15px auto 0;
-                font-size: 14px;
-                line-height: 26px;
-            }
-            &-btn {
-                width: 240px;
-                height: 60px;
-            }
         }
     }
 }
@@ -214,33 +187,6 @@
             }
         }
     }
-    .carousel {
-        padding-bottom: 50px;
-        &__title {
-            margin: 0;
-            font-size: 40px;
-            line-height: 60px;
-        }
-        &__slide {
-            padding: 20px;
-            flex-basis: 555px;
-            flex-direction: column;
-            column-gap: initial;
-            &-photo {
-                height: 300px;
-                flex: 0 1 300px;
-            }
-            &-content {
-                flex: 1 1 300px;
-            }
-            &-btn {
-                &:hover {
-                    color: $black;
-                    background-color: $white;
-                }
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 576px) {
@@ -296,20 +242,6 @@
         &__title {
             font-size: 36px;
             line-height: 48px;
-        }
-    }
-    .carousel {
-        &__title {
-            font-size: 30px;
-            line-height: 45px;
-        }
-        &__inner {
-            margin-top: 15px;
-        }
-        &__slide {
-            margin-top: -40px;
-            flex-basis: 300px;
-            margin: 0 auto;
         }
     }
 }
