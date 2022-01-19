@@ -43,6 +43,35 @@
             gap: 25px 225px;
         }
     }
+    .carousel {
+        &__title {
+            font-size: 42px;
+            line-height: 60px;
+        }
+        &__slider {
+            margin-top: 25px;
+            &-content {
+                &-title {
+                    max-width: 190px;
+                    font-size: 30px;
+                    line-height: 45px;
+                }
+                &-text {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                &-btn {
+                    margin-top: 43px;
+                    max-width: 245px;
+                    height: 60px;
+                }
+            }
+        }
+        &__controls {
+            height: 68px;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -90,6 +119,44 @@
         }
         &__inner {
             gap: 50px;
+        }
+    }
+    .carousel {
+        min-height: 650px;
+        padding-bottom: 50px;
+        &__title {
+            margin-left: 45px;
+            font-size: 36px;
+            line-height: 48px;
+        }
+        &__slider {
+            margin-top: 25px;
+            &-slide {
+                &-wrapper {
+                    column-gap: 25px;
+                }
+            }
+            &-content {
+                &-title {
+                    max-width: 160px;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+                &-text {
+                    margin-top: 15px;
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+                &-btn {
+                    margin-top: 35px;
+                    max-width: 200px;
+                    height: 50px;
+                    font-size: 24px;
+                }
+            }
+        }
+        &__controls {
+            height: 68px;
         }
     }
 }
@@ -187,6 +254,44 @@
             }
         }
     }
+    .carousel {
+        &__title {
+            margin: 0;
+            text-align: center;
+        }
+        &__slider {
+            &-slide {
+                &-wrapper {
+                    padding: 20px;
+                    flex-direction: column;
+                    column-gap: unset;
+                    row-gap: 20px;
+                }
+            }
+            &-image {
+                flex: 0 1 auto;
+                width: 100%;
+                img {
+                    height: 100%;
+                }
+            }
+            &-content {
+                flex: 0 1 auto;
+                &-title {
+                    max-width: 100%;
+                }
+                &-btn {
+                    margin: 35px auto 0;
+                    &:hover {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+        &__controls {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -242,6 +347,25 @@
         &__title {
             font-size: 36px;
             line-height: 48px;
+        }
+    }
+    .carousel {
+        min-height: 500px;
+        &__slider {
+            &-content {
+                &-title {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                &-text {
+                    margin-top: 10px;
+                    font-size: 13px;
+                    line-height: 22px;
+                }
+                &-btn {
+                    margin-top: 20px;
+                }
+            }
         }
     }
 }
