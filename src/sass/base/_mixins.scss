@@ -17,3 +17,16 @@
         text-decoration: none;
     }
 }
+
+@mixin formLayout {
+    background-color: $yellow;
+    border-radius: 20px;
+    padding: 110px 45px 40px 60px;
+    input {
+        display: block;
+        padding: 10px 20px;
+        &:focus {
+            outline: none;
+        }
+    }
+}

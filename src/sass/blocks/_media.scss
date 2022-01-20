@@ -72,6 +72,53 @@
             height: 68px;
         }
     }
+    .advantages {
+        &__list {
+            column-gap: 35px;
+        }
+    }
+    .pricing {
+        &__list {
+            gap: 50px;
+        }
+    }
+    .request {
+        &__form {
+            flex-basis: 580px;
+            padding: 85px 35px 40px 50px;
+            min-height: 420px;
+        }
+        &__info-list {
+            min-height: 300px;
+            &-item {
+                &-title,
+                &-descr {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__logo {
+            flex: 0 1 120px;
+            height: 91px;
+        }
+        &__contacts,
+        &__location {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__contacts {
+            flex: 0 1 310px;
+        }
+        &__location {
+            flex: 0 1 260px;
+        }
+        &__social {
+            flex: 0 1 200px;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -157,6 +204,90 @@
         }
         &__controls {
             height: 68px;
+        }
+    }
+    .advantages {
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        &__list {
+            &-item {
+                max-width: 300px;
+                &::before {
+                    top: -140px;
+                    font-size: 260px;
+                    line-height: 260px;
+                }
+                &-title {
+                    font-size: 22px;
+                    line-height: 24px;
+                }
+                &-text {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &__btn {
+            height: 75px;
+        }
+    }
+    .pricing {
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        &__list {
+            margin-top: 50px;
+            &-item {
+                min-height: 267px;
+                &-title {
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+                &-total {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    .request {
+        &__info-list {
+            &-item {
+                &:not(:first-child) {
+                    margin-top: 15px;
+                }
+                &-title,
+                &-descr {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__logo {
+            flex: 0 1 120px;
+            height: 91px;
+        }
+        &__contacts,
+        &__location {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__contacts {
+            flex: 0 1 250px;
+        }
+        &__location {
+            flex: 0 1 220px;
+        }
+        &__social {
+            flex: 0 1 125px;
+            &-link {
+                width: 35px;
+                height: 35px;
+            }
         }
     }
 }
@@ -292,6 +423,88 @@
             display: none;
         }
     }
+    .advantages {
+        &__list {
+            flex-flow: column wrap;
+            column-gap: unset;
+            align-items: center;
+            &-item {
+                max-width: 350px;
+                &::before {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &-title {
+                    text-align: center;
+                }
+                &-text {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+        }
+        &__btn {
+            &:active {
+                background-color: $white;
+            }
+        }
+    }
+    .pricing {
+        &__list {
+            &-item {
+                max-width: 250px;
+                &-btn {
+                    &:active {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .request {
+        min-height: 690px;
+        padding-bottom: 50px;
+        &__title {
+            text-align: center;
+        }
+        &__inner {
+            flex-flow: column nowrap;
+            column-gap: 0;
+            row-gap: 25px;
+        }
+        &__info-list {
+            flex-basis: 315px;
+            min-height: 315px;
+        }
+        &__form {
+            width: 100%;
+            flex-basis: 420px;
+            &-btn {
+                &:active {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+    .footer {
+        padding-bottom: 30px;
+        &__inner {
+            flex-flow: column nowrap;
+        }
+        &__contacts,
+        &__location,
+        &__social {
+            margin-top: 30px;
+            flex: 0 1 auto;
+            text-align: center;
+        }
+        &__contacts {
+            row-gap: 10px;
+        }
+        &__social {
+            max-width: 350px;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -366,6 +579,73 @@
                     margin-top: 20px;
                 }
             }
+        }
+    }
+    .advantages {
+        &__list {
+            margin-top: 90px;
+            row-gap: 130px;
+            &-item {
+                max-width: 100%;
+                &::before {
+                    top: -100px;
+                    font-size: 215px;
+                    line-height: 215px;
+                }
+                &-title {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+                &-text {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &__btn {
+            margin-top: 35px;
+            max-width: 250px;
+            height: 70px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .pricing {
+        padding-bottom: 50px;
+        &__list {
+            margin-top: 25px;
+            gap: 25px;
+        }
+    }
+    .request {
+        min-height: 690px;
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &__form {
+            padding: 40px 15px 25px 25px;
+            min-height: 325px;
+            flex-basis: 325px;
+            &-phone {
+                margin-top: 50px;
+            }
+            &-btn {
+                margin: 50px auto 0;
+            }
+        }
+    }
+    .footer {
+        &__location {
+            padding: 0;
+            max-width: 250px;
+            &::before {
+                display: none;
+            }
+        }
+        &__social {
+            max-width: 200px;
         }
     }
 }
