@@ -1,0 +1,56 @@
+.advantages {
+    min-height: 979px;
+    padding: 48px 0 57px;
+    background-color: $yellow;
+    &__title {
+        font-size: 48px;
+        line-height: 54px;
+    }
+    &__list {
+        margin: 150px 0 0 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 160px 75px;
+        justify-content: center;
+        align-items: stretch;
+        counter-reset: number 0;
+        list-style: none;
+        &-item {
+            max-width: 350px;
+            position: relative;
+            &::before {
+                content: counter(number);
+                counter-increment: number;
+                font-family: "Roboto Slab", serif;
+                position: absolute;
+                left: 15px;
+                top: -150px;
+                font-weight: 700;
+                font-size: 288px;
+                line-height: 288px;
+                color: rgba(0, 0, 0, 0.13);
+            }
+            &-title {
+                margin: 0;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            &-text {
+                margin: 17px 0 0 0;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+    }
+    &__btn {
+        margin: 68px auto 0;
+        background-color: $white;
+        max-width: 287px;
+        height: 90px;
+        border-radius: 20px;
+        &:active {
+            background-color: $lightYellow;
+        }
+    }
+}

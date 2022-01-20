@@ -1,0 +1,104 @@
+.request {
+    min-height: 542px;
+    padding: 0 0 80px;
+    &__title {
+        font-size: 36px;
+        line-height: 49px;
+        text-align: left;
+    }
+    &__inner {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+        flex-flow: row nowrap;
+    }
+    &__form {
+        flex: 0 1 648px;
+        min-height: 440px;
+        @include formLayout;
+        &-name,
+        &-phone {
+            width: 100%;
+            background-color: $whiteTransparent;
+            border: none;
+            border-bottom: 1px solid $black;
+            &::placeholder {
+                color: $placeholderColor;
+            }
+        }
+        &-phone {
+            margin-top: 85px;
+        }
+        &-btn {
+            margin: 50px 0 0 auto;
+            max-width: 265px;
+            height: 70px;
+            border: none;
+            background-color: $white;
+            border-radius: 20px;
+            &:active {
+                background-color: $lightYellow;
+            }
+        }
+    }
+    &__info-list {
+        margin: 0;
+        padding: 0 0 0 36px;
+        list-style: none;
+        flex: 0 1 579px;
+        min-height: 408px;
+        &-item {
+            position: relative;
+            &:not(:first-child) {
+                margin-top: 25px;
+            }
+            &.item-1 {
+                .request__info-list-item-title,
+                .request__info-list-item-descr {
+                    display: inline-block;
+                    margin: 0;
+                    &::before {
+                        content: url("../icons/request/time.svg");
+                        position: absolute;
+                        top: 0;
+                        left: -36px;
+                    }
+                }
+            }
+            &.item-2 {
+                &::before {
+                    content: url("../icons/request/mic.svg");
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -36px;
+                }
+            }
+            &.item-3 {
+                &::before {
+                    content: url("../icons/request/sound.svg");
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -36px;
+                }
+            }
+            &.item-4 {
+                &::before {
+                    content: url("../icons/request/music.svg");
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -36px;
+                }
+            }
+            &-title,
+            &-descr {
+                margin: 0;
+                font-size: 24px;
+                line-height: 33px;
+            }
+        }
+    }
+}

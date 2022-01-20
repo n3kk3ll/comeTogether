@@ -1,0 +1,79 @@
+.courses {
+    min-height: 843px;
+    padding-bottom: 50px;
+    &__title {
+        font-size: 96px;
+        line-height: 131px;
+        br {
+            display: none;
+        }
+    }
+    &__inner {
+        margin-top: 52px;
+        display: flex;
+        row-gap: 25px;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    &__card {
+        padding: 30px 20px 22px;
+        border-radius: 20px;
+        box-shadow: 2px -2px 5px $halfTransparentBackground;
+        flex: 0 1 306px;
+        transition: transform .3s ease-in-out;
+        background-color: $yellow;
+        &:hover {
+            transform: scale(1.025);
+            transition: transform .3s ease-in-out;
+        }
+        &-image {
+            width: 266px;
+            height: 252px;
+            img {
+                width: 100%;
+            }
+        }
+        &:nth-child(4) {
+            .courses__card-title {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        &-title {
+            margin: 11px auto 0;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+        }
+        &-descr {
+            margin: 22px auto 0;
+            width: 258px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &-btn {
+            margin: 22px auto 0;
+            width: 127px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            background-color: $white;
+            border-radius: 20px;
+            &:hover {
+                background-color: $grey;
+                color: $white;
+            }
+            &:active {
+                background-color: rgba(0, 0, 0, 0.72);
+                color: $white;
+            }
+        }
+    }
+}
