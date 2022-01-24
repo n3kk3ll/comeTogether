@@ -35,6 +35,11 @@ footer {
     padding: 0 10px;
 }
 
+ul,ol,p {
+    margin: 0;
+    padding: 0;
+}
+
 .btn {
     @include btnLayout;
 }
@@ -71,4 +76,5 @@ footer {
 @import 'blocks/actor/actor-article';
 @import 'blocks/actor/learn';
 @import 'blocks/actor/teachers';
+@import 'blocks/about/about';
 @import 'blocks/media';

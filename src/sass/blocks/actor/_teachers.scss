@@ -7,10 +7,11 @@
     }
     &__list {
         margin-top: 97px;
-        padding: 0 190px;
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 112px;
         &-item {
             flex: 0 1 382px;
             min-height: 600px;
@@ -56,10 +57,5 @@
                 }
             }
         }
-    }
-}
-.actor-teachers {
-    &__list {
-        justify-content: center;
     }
 }

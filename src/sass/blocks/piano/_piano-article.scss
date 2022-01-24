@@ -21,6 +21,9 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
     }
     &__image {
         flex: 0 1 632px;
