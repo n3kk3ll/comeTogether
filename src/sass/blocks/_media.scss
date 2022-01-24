@@ -165,9 +165,41 @@
             flex: 0 1 250px;
         }
     }
-    .teachers {
-        &__list {
-            padding: 0 85px;
+    .about {
+        &__block {
+            column-gap: 35px;
+            &-descr {
+                flex: 0 1 450px;
+                &-text {
+                    font-size: 16px;
+                    line-height: 24px;
+                    &-list {
+                        padding: 0 0 0 18px;
+                        &-item {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                &-icons {
+                    justify-content: space-around;
+                    &-icon {
+                        flex: 0 1 150px;
+                        max-height: 140px;
+                    }
+                }
+                &-buttons {
+                    margin-top: 70px;
+                    &-btn {
+                        height: 65px;
+                        font-size: 24px;
+                        line-height: 36px;
+                    }
+                }
+            }
+            &-carousel {
+                flex: 0 1 475px;
+            }
         }
     }
 }
@@ -392,11 +424,62 @@
         padding: 46px 0 100px;
         min-height: 860px;
         &__list {
-            margin-top: 75px;
-            padding: 0 60px;
+            gap: 75px;
             &-item {
-                flex: 0 1 300px;
+                flex: 0 1 325px;
                 min-height: 575px;
+            }
+        }
+    }
+    .about {
+        min-height: 1810px;
+        &__title {
+            font-size: 60px;
+        }
+        &__subtitle {
+            font-size: 30px;
+            line-height: 45px;
+        }
+        &__block {
+            column-gap: 30px;
+            &-descr {
+                flex: 0 1 375px;
+                &-text {
+                    font-size: 14px;
+                    line-height: 22px;
+                    &-list {
+                        padding: 0 0 0 16px;
+                        &-item {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                &-icons {
+                    justify-content: space-around;
+                    &-icon {
+                        flex: 0 1 150px;
+                        max-height: 140px;
+                    }
+                }
+                &-buttons {
+                    margin-top: 40px;
+                    &-btn {
+                        height: 65px;
+                        font-size: 24px;
+                        line-height: 36px;
+                    }
+                }
+            }
+            &-carousel {
+                flex: 0 1 340px;
+                min-height: 440px;
+                &-image {
+                    height: 375px;
+                }
+                &-controls {
+                    bottom: 0;
+                }
             }
         }
     }
@@ -674,9 +757,8 @@
     .teachers {
         &__list {
             margin-top: 50px;
-            padding: 0;
             flex-flow: column nowrap;
-            row-gap: 50px;
+            gap: 50px 0;
             &-item {
                 flex: 0 1 auto;
                 &-card {
@@ -684,6 +766,50 @@
                         flex: 0 1 478px;
                         max-width: 478px;
                     }
+                }
+            }
+        }
+    }
+    .about {
+        padding: 24px 0 50px;
+        &__title {
+            font-size: 50px;
+            line-height: 75px;
+        }
+        &__subtitle {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        &__block {
+            margin-top: 35px;
+            flex-flow: column-reverse nowrap;
+            row-gap: 20px;
+            column-gap: 0;
+            &:nth-child(even) {
+                flex-flow: column-reverse nowrap;
+                row-gap: 20px;
+                column-gap: 0;
+            }
+            &-descr {
+                flex: 0 1 auto;
+                min-height: 350px;
+                &-icons {
+                    max-width: 100%;
+                }
+                &-buttons {
+                    &-btn {
+                        &:hover {
+                            background-color: $yellow;
+                        }
+                    }
+                }
+            }
+            &-carousel {
+                width: 100%;
+                min-height: 400px;
+                flex: 0 1 auto;
+                &-controls {
+                    display: none;
                 }
             }
         }
@@ -888,6 +1014,33 @@
     .actor-teachers {
         &__title {
             font-size: 26px;
+        }
+    }
+    .about {
+        &__title {
+            font-size: 42px;
+            line-height: 60px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &__block {
+            &-descr {
+                &-buttons {
+                    &-btn {
+                        height: 45px;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            &-carousel {
+                min-height: 300px;
+                &-image {
+                    height: 300px;
+                }
+            }
         }
     }
 }
