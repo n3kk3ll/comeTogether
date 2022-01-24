@@ -120,7 +120,10 @@
             flex: 0 1 200px;
         }
     }
-    .vocal-article {
+    .vocal-article,
+    .piano-article,
+    .guitar-article,
+    .actor-article {
         &__title {
             font-size: 86px;
             line-height: 120px;
@@ -339,7 +342,10 @@
             }
         }
     }
-    .vocal-article {
+    .vocal-article,
+    .piano-article,
+    .guitar-article,
+    .actor-article {
         min-height: 600px;
         &__title {
             font-size: 76px;
@@ -622,7 +628,10 @@
             }
         }
     }
-    .vocal-article {
+    .vocal-article,
+    .piano-article,
+    .guitar-article,
+    .actor-article {
         padding: 35px 0 50px;
         &__title {
             font-size: 66px;
@@ -633,7 +642,16 @@
             row-gap: 30px;
         }
         &__descr {
-            flex: 0 1 225px;
+            flex: 0 1 auto;
+            p + p {
+                margin-top: 10px;
+            }
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__image {
+            width: 100%;
         }
     }
     .learn {
@@ -814,7 +832,10 @@
             max-width: 200px;
         }
     }
-    .vocal-article {
+    .vocal-article,
+    .piano-article,
+    .guitar-article,
+    .actor-article {
         padding: 20px 0 50px;
         &__title {
             font-size: 60px;
@@ -822,6 +843,18 @@
         }
         &__inner {
             margin-top: 10px;
+        }
+    }
+    .piano-article {
+        &__title {
+            font-size: 48px;
+            line-height: 72px;
+        }
+    }
+    .actor-article {
+        &__title {
+            font-size: 40px;
+            line-height: 60px;
         }
     }
     .learn {
@@ -850,6 +883,11 @@
         }
         &__list {
             margin-top: 30px;
+        }
+    }
+    .actor-teachers {
+        &__title {
+            font-size: 26px;
         }
     }
 }

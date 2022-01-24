@@ -1,0 +1,16 @@
+.header-vocal {
+    background-color: $black;
+    position: relative;
+    &__btn {
+        background-color: $white;
+        width: 265px;
+        height: 76px;
+        border-radius: 20px;
+        &:hover {
+            background-color: $lightYellow;
+        }
+        &:active {
+            background-color: $deepYellow;
+        }
+    }
+}
