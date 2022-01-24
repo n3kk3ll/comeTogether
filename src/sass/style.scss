@@ -45,14 +45,18 @@ footer {
     text-align: center;
 }
 
-@import 'blocks/header';
-@import 'blocks/promo';
-@import 'blocks/test-lesson';
-@import 'blocks/courses';
-@import 'blocks/carousel';
-@import 'blocks/advantages';
-@import 'blocks/pricing';
-@import 'blocks/request';
-@import 'blocks/footer';
-@import 'blocks/pageup';
+@import 'blocks/index/header';
+@import 'blocks/index/promo';
+@import 'blocks/index/test-lesson';
+@import 'blocks/index/courses';
+@import 'blocks/index/carousel';
+@import 'blocks/index/advantages';
+@import 'blocks/index/pricing';
+@import 'blocks/index/request';
+@import 'blocks/index/footer';
+@import 'blocks/index/pageup';
+@import 'blocks/vocal/header';
+@import 'blocks/vocal/vocal-article';
+@import 'blocks/vocal/learn';
+@import 'blocks/vocal/teachers';
 @import 'blocks/media';

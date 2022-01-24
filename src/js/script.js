@@ -1,33 +1,11 @@
 const menuToggle = document.getElementById('menuToggle'),
     menu = document.querySelector('.header__nav'),
+    headerOverlay = document.querySelector('.header__overlay'),
     label = document.querySelector('.header__menu-button-sm-label'),
-    overlay = document.querySelector('.overlay'),
-    btnUp = document.querySelector('.pageup'),
-    swiper = new Swiper('.carousel__slider', {
-        navigation: {
-            nextEl: document.querySelector('.carousel__controls-next'),
-            prevEl: document.querySelector('.carousel__controls-prev'),
-        },
-        slidesPerView: 1.15,
-        speed: 1000,
-        spaceBetween: 60,
-        loop: true,
-        autoHeight: true,
-        watchOverflow: true,
-        breakpoints: {
-            576: {
-                slidesPerView: 1.15,
-                spaceBetween: 30,
-            },
-            320: {
-                slidesPerView: 1,
-            }
-        },
-    });
+    btnUp = document.querySelector('.pageup');
 
 function menuOpen () {
     menu.classList.toggle('open');
-    overlay.classList.toggle('active');
     document.body.style.overflow = 'hidden';
     if (menuToggle.checked === false) {
         document.body.style.overflow = 'visible';
@@ -35,7 +13,6 @@ function menuOpen () {
 }
 
 function menuClose () {
-    overlay.classList.remove('active');
     menu.classList.remove('open');
     menuToggle.checked = false;
     document.body.style.overflow = 'visible';
@@ -46,18 +23,16 @@ function showScrollButton () {
         btnUp.style.visibility = 'visible';
         btnUp.style.opacity = 1;
         btnUp.style.transition = 'opacity .5s ease';
+        headerOverlay.style.opacity = 1;
     } else {
         btnUp.style.visibility = 'hidden';
         btnUp.style.opacity = 0;
+        headerOverlay.style.opacity = 0;
     }
 }
 
 menuToggle.addEventListener('input', () => {
     menuOpen();
-});
-
-overlay.addEventListener('click', () => {
-    menuClose();
 });
 
 window.addEventListener('scroll', () => {

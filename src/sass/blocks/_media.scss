@@ -12,7 +12,8 @@
                 font-size: 20px;
             }
         }
-        &__btn {
+        &__btn,
+        .header-vocal__btn {
             width: 225px;
             font-size: 24px;
         }
@@ -119,6 +120,53 @@
             flex: 0 1 200px;
         }
     }
+    .vocal-article {
+        &__title {
+            font-size: 86px;
+            line-height: 120px;
+        }
+        &__inner {
+            margin-top: 50px;
+        }
+        &__descr {
+            flex: 0 1 415px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__image {
+            flex: 0 1 512px;
+        }
+    }
+    .learn {
+        min-height: 375px;
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__descr {
+            flex: 0 1 400px;
+        }
+        &__list {
+            padding: 0 0 0 22px;
+            &-item {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        &__images {
+            flex: 0 1 536px;
+        }
+        &__image {
+            flex: 0 1 250px;
+        }
+    }
+    .teachers {
+        &__list {
+            padding: 0 85px;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -127,7 +175,8 @@
         &__logo {
             flex: 0 1 115px;
         }
-        &__btn {
+        &__btn,
+        .header-vocal__btn {
             width: 160px;
             height: 66px;
             font-size: 18px;
@@ -287,6 +336,61 @@
             &-link {
                 width: 35px;
                 height: 35px;
+            }
+        }
+    }
+    .vocal-article {
+        min-height: 600px;
+        &__title {
+            font-size: 76px;
+            line-height: 100px;
+        }
+        &__inner {
+            margin-top: 35px;
+        }
+        &__descr {
+            flex: 0 1 325px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__image {
+            flex: 0 1 400px;
+        }
+    }
+    .learn {
+        min-height: 330px;
+        &__title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__descr {
+            flex: 0 1 320px;
+        }
+        &__list {
+            padding: 0 0 0 18px;
+            &-item {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        &__images {
+            flex: 0 1 410px;
+        }
+        &__image {
+            flex: 0 1 195px;
+        }
+    }
+    .teachers {
+        padding: 46px 0 100px;
+        min-height: 860px;
+        &__list {
+            margin-top: 75px;
+            padding: 0 60px;
+            &-item {
+                flex: 0 1 300px;
+                min-height: 575px;
             }
         }
     }
@@ -505,6 +609,67 @@
             max-width: 350px;
         }
     }
+    .pageup {
+        width: 30px;
+        height: 30px;
+        bottom: 30px;
+        right: 20px;
+    }
+    .header-vocal {
+        &__btn {
+            &:hover {
+                background-color: $white;
+            }
+        }
+    }
+    .vocal-article {
+        padding: 35px 0 50px;
+        &__title {
+            font-size: 66px;
+            line-height: 90px;
+        }
+        &__inner {
+            flex-flow: column nowrap;
+            row-gap: 30px;
+        }
+        &__descr {
+            flex: 0 1 225px;
+        }
+    }
+    .learn {
+        padding: 50px 0;
+        &__inner {
+            flex-flow: column nowrap;
+            row-gap: 25px;
+        }
+        &__images {
+            flex: 0 1 auto;
+        }
+        &__image {
+            flex: 0 1 275px;
+        }
+        &__descr {
+            flex: 0 1 auto;
+            width: 100%;
+        }
+    }
+    .teachers {
+        &__list {
+            margin-top: 50px;
+            padding: 0;
+            flex-flow: column nowrap;
+            row-gap: 50px;
+            &-item {
+                flex: 0 1 auto;
+                &-card {
+                    &-photo {
+                        flex: 0 1 478px;
+                        max-width: 478px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -515,7 +680,8 @@
         &__nav {
             top: 98px;
         }
-        &__btn {
+        &__btn,
+        .header-vocal__btn {
             width: 85px;
             font-size: 16px;
             line-height: 18px;
@@ -646,6 +812,44 @@
         }
         &__social {
             max-width: 200px;
+        }
+    }
+    .vocal-article {
+        padding: 20px 0 50px;
+        &__title {
+            font-size: 60px;
+            line-height: 90px;
+        }
+        &__inner {
+            margin-top: 10px;
+        }
+    }
+    .learn {
+        padding: 20px 0 50px;
+        &__title {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__list {
+            padding: 0 0 0 16px;
+            &-item {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        &__images {
+            flex-flow: column nowrap;
+            row-gap: 25px;
+        }
+    }
+    .teachers {
+        padding: 46px 0 50px;
+        &__title {
+            font-size: 28px;
+            line-height: 42px;
+        }
+        &__list {
+            margin-top: 30px;
         }
     }
 }
