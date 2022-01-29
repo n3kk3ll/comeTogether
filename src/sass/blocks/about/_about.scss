@@ -14,11 +14,15 @@
         margin-top: 65px;
         display: flex;
         flex-flow: row wrap;
-        column-gap: 92px;
         &:nth-child(even) {
             flex-flow: row-reverse wrap;
+            .about__block-descr {
+                margin-right: 0;
+                margin-left: 92px;
+            }
         }
         &-descr {
+            margin-right: 92px;
             flex: 0 1 598px;
             min-height: 440px;
             &-text {

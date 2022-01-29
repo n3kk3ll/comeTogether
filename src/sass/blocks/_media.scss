@@ -162,13 +162,19 @@
             flex: 0 1 536px;
         }
         &__image {
-            flex: 0 1 250px;
+            max-width: 250px;
         }
     }
     .about {
         &__block {
-            column-gap: 35px;
+            &:nth-child(even) {
+                .about__block-descr {
+                    margin-right: 0;
+                    margin-left: 35px;
+                }
+            }
             &-descr {
+                margin-right: 35px;
                 flex: 0 1 450px;
                 &-text {
                     font-size: 16px;
@@ -417,7 +423,8 @@
             flex: 0 1 410px;
         }
         &__image {
-            flex: 0 1 195px;
+            max-width: 200px;
+            height: 175px;
         }
     }
     .teachers {
@@ -427,7 +434,6 @@
             gap: 75px;
             &-item {
                 flex: 0 1 325px;
-                min-height: 575px;
             }
         }
     }
@@ -441,8 +447,14 @@
             line-height: 45px;
         }
         &__block {
-            column-gap: 30px;
+            &:nth-child(even) {
+                .about__block-descr {
+                    margin-right: 0;
+                    margin-left: 30px;
+                }
+            }
             &-descr {
+                margin-right: 30px;
                 flex: 0 1 375px;
                 &-text {
                     font-size: 14px;
@@ -735,6 +747,8 @@
         }
         &__image {
             width: 100%;
+            flex: initial;
+            height: 313px;
         }
     }
     .learn {
@@ -745,9 +759,12 @@
         }
         &__images {
             flex: 0 1 auto;
+            width: 100%;
+            justify-content: space-around;
         }
         &__image {
-            flex: 0 1 275px;
+            max-width: 250px;
+            height: 200px;
         }
         &__descr {
             flex: 0 1 auto;
@@ -755,16 +772,19 @@
         }
     }
     .teachers {
+        min-height: 800px;
+        padding-bottom: 50px;
         &__list {
             margin-top: 50px;
             flex-flow: column nowrap;
             gap: 50px 0;
             &-item {
-                flex: 0 1 auto;
+                flex: initial;
                 &-card {
+                    width: 100%;
                     &-photo {
-                        flex: 0 1 478px;
-                        max-width: 478px;
+                        flex: initial;
+                        height: 450px;
                     }
                 }
             }
@@ -783,14 +803,14 @@
         &__block {
             margin-top: 35px;
             flex-flow: column-reverse nowrap;
-            row-gap: 20px;
-            column-gap: 0;
             &:nth-child(even) {
                 flex-flow: column-reverse nowrap;
-                row-gap: 20px;
-                column-gap: 0;
+                .about__block-descr {
+                    margin: 20px 0 0 0;
+                }
             }
             &-descr {
+                margin: 20px 0 0 0;
                 flex: 0 1 auto;
                 min-height: 350px;
                 &-icons {
@@ -813,6 +833,9 @@
                 }
             }
         }
+    }
+    .error {
+        padding: 50px 0 50px;
     }
 }
 
@@ -998,7 +1021,13 @@
         }
         &__images {
             flex-flow: column nowrap;
-            row-gap: 25px;
+        }
+        &__image {
+            max-width: 100%;
+            height: 242px;
+            &:not(:first-child) {
+                margin-top: 25px;
+            }
         }
     }
     .teachers {
@@ -1041,6 +1070,24 @@
                     height: 300px;
                 }
             }
+        }
+    }
+    .error {
+        min-height: 600px;
+        &__inner {
+            min-height: 500px;
+        }
+        &__image {
+            height: 235px;
+            width: calc(100% - 20px);
+        }
+        &__title {
+            font-size: 26px;
+            line-height: 40px;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 24px;
         }
     }
 }
