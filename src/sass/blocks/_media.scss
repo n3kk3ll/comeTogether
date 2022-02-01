@@ -208,6 +208,61 @@
             }
         }
     }
+    .request__block {
+        padding: 63px 0;
+        .icon {
+            max-width: 150px;
+            height: 160px;
+            &.first {
+                right: calc(100vw - 150px);
+            }
+            &.second {
+                right: calc(100vw - 160px);
+            }
+            &.third {
+                left: calc(100vw - 150px);
+            }
+            &.fourth {
+                left: calc(100vw - 160px);
+            }
+        }
+    }
+    .contacts {
+        &__map {
+            max-width: 615px;
+        }
+    }
+    .team {
+        &__list {
+            &-person {
+                &-descr {
+                    max-width: 400px;
+                    font-size: 22px;
+                    line-height: 33px;
+                }
+                &-info {
+                    max-width: 500px;
+                    &-photo {
+                        height: 400px;
+                    }
+                    &-actions {
+                        max-width: 470px;
+                    }
+                }
+            }
+            &-btn {
+                max-width: 200px;
+                min-height: 60px;
+                font-size: 22px;
+                line-height: 33px;
+            }
+        }
+    }
+    .course {
+        &__cards {
+            justify-content: space-around;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -495,6 +550,107 @@
             }
         }
     }
+    .request__block {
+        &-form {
+            max-width: 530px;
+            &-name {
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+            }
+            &-phone {
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+            }
+        }
+        .icon {
+            max-width: 110px;
+            height: 105px;
+            &.first {
+                right: calc(100vw - 120px);
+            }
+            &.second {
+                right: calc(100vw - 115px);
+            }
+            &.third {
+                left: calc(100vw - 120px);
+            }
+            &.fourth {
+                left: calc(100vw - 115px);
+            }
+        }
+    }
+    .contacts {
+        min-height: 500px;
+        &__map {
+            max-width: 440px;
+            min-height: 450px;
+        }
+        &__info {
+            max-width: 250px;
+            min-height: 200px;
+            &-address {
+                font-size: 20px;
+                line-height: 30px;
+                &::before {
+                    width: 30px;
+                    height: 36px;
+                }
+            }
+            &-phone {
+                margin-top: 15px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            &-btn {
+                height: 65px;
+            }
+        }
+    }
+    .team {
+        &__list {
+            &-person {
+                min-height: 500px;
+                &:not(:first-child) {
+                    margin-top: 50px;
+                }
+                &-descr {
+                    max-width: 350px;
+                    font-size: 19px;
+                    line-height: 30px;
+                }
+                &-info {
+                    max-width: 350px;
+                    &-photo {
+                        height: 350px;
+                    }
+                    &-actions {
+                        margin: 25px auto 0;
+                        max-width: 320px;
+                    }
+                }
+            }
+            &-btn {
+                max-width: 150px;
+                min-height: 50px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .course {
+        &__icons {
+            &-icon {
+                max-width: 150px;
+                height: 160px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -606,6 +762,8 @@
             }
             &-image {
                 flex: 0 1 auto;
+                max-width: 440px;
+                height: 440px;
                 width: 100%;
                 img {
                     height: 100%;
@@ -668,7 +826,6 @@
     }
     .request {
         min-height: 690px;
-        padding-bottom: 50px;
         &__title {
             text-align: center;
         }
@@ -678,8 +835,8 @@
             row-gap: 25px;
         }
         &__info-list {
-            flex-basis: 315px;
-            min-height: 315px;
+            flex-basis: 250px;
+            min-height: 250px;
         }
         &__form {
             width: 100%;
@@ -711,10 +868,9 @@
         }
     }
     .pageup {
-        width: 30px;
-        height: 30px;
-        bottom: 30px;
-        right: 20px;
+        width: 60px;
+        height: 60px;
+        transform: translateX(calc(100vw - 70px));
     }
     .header-vocal {
         &__btn {
@@ -837,6 +993,149 @@
     .error {
         padding: 50px 0 50px;
     }
+    .request__block {
+        min-height: 500px;
+        padding: 63px 0 0 0;
+        &-title {
+            font-size: 30px;
+            line-height: 45px;
+        }
+        &-form {
+            max-width: 530px;
+            &-name {
+                min-height: 40px;
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+            &-phone {
+                min-height: 40px;
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+        }
+        .icon {
+            display: none;
+        }
+    }
+    .contacts {
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        &__inner {
+            margin-top: 15px;
+            flex-flow: column nowrap;
+        }
+        &__map {
+            margin: 0;
+            max-width: 100%;
+        }
+        &__info {
+            margin-top: 60px;
+            max-width: 100%;
+            min-height: 150px;
+            text-align: center;
+            &-address {
+                display: inline-block;
+                font-size: 24px;
+                line-height: 36px;
+                &::before {
+                    width: 33px;
+                    height: 45px;
+                    top: -50px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            &-btn {
+                margin: 20px auto 0;
+                &:hover {
+                    background-color: $yellow;
+                }
+            }
+        }
+    }
+    .team {
+        padding: 50px 0 0 0;
+        &__title {
+            font-size: 42px;
+            line-height: 60px;
+        }
+        &__list {
+            margin-top: 25px;
+            &-person {
+                min-height: 500px;
+                &:not(:first-child) {
+                    margin-top: 50px;
+                }
+                &-title {
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+                &-content {
+                    margin-top: 25px;
+                    flex-flow: column nowrap;
+                }
+                &-descr {
+                    max-width: 100%;
+                    font-size: 18px;
+                    line-height: 27px;
+                    &-quote {
+                        margin-top: 10px;
+                    }
+                }
+                &-info {
+                    margin-top: 25px;
+                    max-width: 100%;
+                    &-photo {
+                        height: 400px;
+                    }
+                    &-actions {
+                        margin: 25px auto 0;
+                        max-width: calc(100% - 30px);
+                    }
+                }
+            }
+            &-btn {
+                max-width: 250px;
+                min-height: 60px;
+                font-size: 20px;
+                line-height: 30px;
+                &:hover {
+                    background-color: $yellow;
+                }
+            }
+        }
+    }
+    .course {
+        &__icons {
+            &-icon {
+                max-width: 120px;
+                height: 130px;
+            }
+        }
+        &__cards {
+            &-card {
+                margin: 50px auto 0;
+                &:hover {
+                    transform: unset;
+                }
+            }
+        }
+        &__card {
+            &-btn {
+                &:hover {
+                    background-color: $white;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -898,6 +1197,9 @@
     .carousel {
         min-height: 500px;
         &__slider {
+            &-image {
+                height: 300px;
+            }
             &-content {
                 &-title {
                     font-size: 20px;
@@ -952,7 +1254,7 @@
         }
     }
     .request {
-        min-height: 690px;
+        min-height: 780px;
         &__title {
             font-size: 32px;
             line-height: 40px;
@@ -968,6 +1270,17 @@
                 margin: 50px auto 0;
             }
         }
+        &__info {
+            &-list {
+                flex-basis: 325px;
+                min-height: 325px;
+            }
+        }
+    }
+    .pageup {
+        width: 50px;
+        height: 50px;
+        transform: translateX(calc(100vw - 50px));
     }
     .footer {
         &__location {
@@ -1088,6 +1401,60 @@
         &__descr {
             font-size: 16px;
             line-height: 24px;
+        }
+    }
+    .request__block {
+        padding: 30px 0 0 0;
+        min-height: 400px;
+        &-form {
+            &-name {
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+            &-phone {
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .team {
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        &__list {
+            &-person {
+                &-descr {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                &-info {
+                    max-width: 500px;
+                    &-photo {
+                        height: 300px;
+                    }
+                }
+            }
+            &-btn {
+                max-width: 130px;
+                min-height: 50px;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+    .course {
+        &__icons {
+            flex-flow: row wrap;
+            &-icon {
+                margin-right: 25px;
+            }
         }
     }
 }

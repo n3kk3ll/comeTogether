@@ -1,0 +1,56 @@
+.request__block {
+    min-height: 600px;
+    padding: 63px 0 112px;
+    &-title {
+        font-size: 36px;
+        line-height: 49px;
+    }
+    &-form {
+        margin: 15px auto 0;
+        padding: 90px 45px 40px 60px;
+        max-width: 648px;
+        width: 100%;
+        &-name {
+            min-height: 60px;
+            &::placeholder {
+                font-weight: 300;
+                font-size: 36px;
+                line-height: 49px;
+            }
+        }
+        &-phone {
+            min-height: 60px;
+            &::placeholder {
+                font-weight: 300;
+                font-size: 36px;
+                line-height: 49px;
+            }
+        }
+    }
+    .icon {
+        display: inline-block;
+        max-width: 177px;
+        width: 100%;
+        height: 182px;
+        position: absolute;
+        img {
+            width: 100%;
+        }
+        &.first {
+            top: 63px;
+            right: calc(100vw - 200px);
+        }
+        &.second {
+            bottom: 100px;
+            right: calc(100vw - 250px);
+        }
+        &.third {
+            top: 63px;
+            left: calc(100vw - 200px);
+        }
+        &.fourth {
+            bottom: 100px;
+            left: calc(100vw - 250px);
+        }
+    }
+}
