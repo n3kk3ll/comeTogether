@@ -208,6 +208,25 @@
             }
         }
     }
+    .request__block {
+        padding: 63px 0;
+        .icon {
+            max-width: 150px;
+            height: 160px;
+            &.first {
+                right: calc(100vw - 150px);
+            }
+            &.second {
+                right: calc(100vw - 160px);
+            }
+            &.third {
+                left: calc(100vw - 150px);
+            }
+            &.fourth {
+                left: calc(100vw - 160px);
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -495,6 +514,41 @@
             }
         }
     }
+    .request__block {
+        &-form {
+            max-width: 530px;
+            &-name {
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+            }
+            &-phone {
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+            }
+        }
+        .icon {
+            max-width: 110px;
+            height: 105px;
+            &.first {
+                right: calc(100vw - 120px);
+            }
+            &.second {
+                right: calc(100vw - 115px);
+            }
+            &.third {
+                left: calc(100vw - 120px);
+            }
+            &.fourth {
+                left: calc(100vw - 115px);
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -606,6 +660,8 @@
             }
             &-image {
                 flex: 0 1 auto;
+                max-width: 440px;
+                height: 440px;
                 width: 100%;
                 img {
                     height: 100%;
@@ -668,7 +724,6 @@
     }
     .request {
         min-height: 690px;
-        padding-bottom: 50px;
         &__title {
             text-align: center;
         }
@@ -678,8 +733,8 @@
             row-gap: 25px;
         }
         &__info-list {
-            flex-basis: 315px;
-            min-height: 315px;
+            flex-basis: 250px;
+            min-height: 250px;
         }
         &__form {
             width: 100%;
@@ -711,10 +766,9 @@
         }
     }
     .pageup {
-        width: 30px;
-        height: 30px;
-        bottom: 30px;
-        right: 20px;
+        width: 60px;
+        height: 60px;
+        transform: translateX(calc(100vw - 70px));
     }
     .header-vocal {
         &__btn {
@@ -837,6 +891,36 @@
     .error {
         padding: 50px 0 50px;
     }
+    .request__block {
+        min-height: 500px;
+        padding: 63px 0 0 0;
+        &-title {
+            font-size: 30px;
+            line-height: 45px;
+        }
+        &-form {
+            max-width: 530px;
+            &-name {
+                min-height: 40px;
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+            &-phone {
+                min-height: 40px;
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+        }
+        .icon {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -898,6 +982,9 @@
     .carousel {
         min-height: 500px;
         &__slider {
+            &-image {
+                height: 300px;
+            }
             &-content {
                 &-title {
                     font-size: 20px;
@@ -952,7 +1039,7 @@
         }
     }
     .request {
-        min-height: 690px;
+        min-height: 780px;
         &__title {
             font-size: 32px;
             line-height: 40px;
@@ -968,6 +1055,17 @@
                 margin: 50px auto 0;
             }
         }
+        &__info {
+            &-list {
+                flex-basis: 325px;
+                min-height: 325px;
+            }
+        }
+    }
+    .pageup {
+        width: 50px;
+        height: 50px;
+        transform: translateX(calc(100vw - 50px));
     }
     .footer {
         &__location {
@@ -1088,6 +1186,26 @@
         &__descr {
             font-size: 16px;
             line-height: 24px;
+        }
+    }
+    .request__block {
+        padding: 30px 0 0 0;
+        min-height: 400px;
+        &-form {
+            &-name {
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+            &-phone {
+                &::placeholder {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
         }
     }
 }

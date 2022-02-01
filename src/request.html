@@ -68,27 +68,32 @@
         </header>
 
         <main>
-            <section class="error">
+            <section class="request__block">
                 <div class="container">
-                    <div class="error__inner">
-                        <div class="error__content">
-                            <h2 class="title error__title">
-                                Ошибка подключения
-                            </h2>
-                            <p class="error__descr">
-                                Сайт пока не может обработать этот запрос.
-                            </p>
-                            <a class="btn error__btn" href="index.html">
-                                Перезагрузить
-                            </a>
-                        </div>
-                    </div>
-                    <div class="error__image">
-                        <img class="error__image-img" src="img/404/404.svg" alt="404 error">
+                    <div class="request__block-inner">
+                        <h2 class="title request__block-title">
+                            Заявка на пробне заняття
+                        </h2>
+                        <form action="#" class="request__form request__block-form">
+                            <input class="request__form-name request__block-form-name" type="text" name="name" id="name" minlength="2" maxlength="50" placeholder="Ім’я">
+                            <input class="request__form-phone request__block-form-phone" type="tel" name="phone" id="phone" placeholder="Телефон">
+                            <input class="btn request__form-btn" type="submit" value="Записатись">
+                        </form>
                     </div>
                 </div>
+                <div class="icon first">
+                    <img src="icons/request-page/01.svg" alt="looking">
+                </div>
+                <div class="icon second">
+                    <img src="icons/request-page/02.svg" alt="success">
+                </div>
+                <div class="icon third">
+                    <img src="icons/request-page/03.svg" alt="hello">
+                </div>
+                <div class="icon fourth">
+                    <img src="icons/request-page/04.svg" alt="guitar">
+                </div>
             </section>
-
         </main>
 
         <a class="pageup" href="#header">
