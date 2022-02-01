@@ -1,0 +1,103 @@
+.course {
+    min-height: 1000px;
+    padding: 50px 0 0 0;
+    &__title {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    &__inner {
+        margin-top: 25px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-around;
+        &-icon {
+            max-width: 177px;
+            height: 182px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        list-style: none;
+        &-card {
+            margin: 58px 25px 0 0;
+            padding: 30px 15px;
+            max-width: 303px;
+            width: 100%;
+            min-height: 547px;
+            background-color: $cardBackground;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.025);
+            }
+            &-inner {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+        }
+    }
+    &__card {
+        &-title {
+            margin: 0;
+            font-size: 21px;
+            line-height: 29px;
+            text-align: center;
+        }
+        &-image {
+            margin-top: 25px;
+            max-width: 273px;
+            width: 100%;
+            height: 202px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-list {
+            margin-top: 25px;
+            max-width: 247px;
+            list-style: none;
+            &-item {
+                padding-left: 8px;
+                font-size: 18px;
+                line-height: 25px;
+                position: relative;
+                user-select: none;
+                &:not(:first-child) {
+                    margin-top: 5px;
+                }
+                &::before {
+                    content: "\2022";
+                    position: absolute;
+                    left: 0;
+                    font-size: inherit;
+                    line-height: inherit;
+                }
+            }
+        }
+        &-btn {
+            margin-top: 25px;
+            max-width: 187px;
+            width: 100%;
+            min-height: 60px;
+            background-color: $white;
+            border-radius: 20px;
+            &:hover {
+                background-color: $lightYellow;
+            }
+            &:active {
+                background-color: $deepYellow;
+            }
+        }
+    }
+}

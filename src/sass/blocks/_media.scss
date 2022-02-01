@@ -232,6 +232,37 @@
             max-width: 615px;
         }
     }
+    .team {
+        &__list {
+            &-person {
+                &-descr {
+                    max-width: 400px;
+                    font-size: 22px;
+                    line-height: 33px;
+                }
+                &-info {
+                    max-width: 500px;
+                    &-photo {
+                        height: 400px;
+                    }
+                    &-actions {
+                        max-width: 470px;
+                    }
+                }
+            }
+            &-btn {
+                max-width: 200px;
+                min-height: 60px;
+                font-size: 22px;
+                line-height: 33px;
+            }
+        }
+    }
+    .course {
+        &__cards {
+            justify-content: space-around;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -578,6 +609,45 @@
             }
             &-btn {
                 height: 65px;
+            }
+        }
+    }
+    .team {
+        &__list {
+            &-person {
+                min-height: 500px;
+                &:not(:first-child) {
+                    margin-top: 50px;
+                }
+                &-descr {
+                    max-width: 350px;
+                    font-size: 19px;
+                    line-height: 30px;
+                }
+                &-info {
+                    max-width: 350px;
+                    &-photo {
+                        height: 350px;
+                    }
+                    &-actions {
+                        margin: 25px auto 0;
+                        max-width: 320px;
+                    }
+                }
+            }
+            &-btn {
+                max-width: 150px;
+                min-height: 50px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .course {
+        &__icons {
+            &-icon {
+                max-width: 150px;
+                height: 160px;
             }
         }
     }
@@ -985,6 +1055,84 @@
             }
             &-btn {
                 margin: 20px auto 0;
+                &:hover {
+                    background-color: $yellow;
+                }
+            }
+        }
+    }
+    .team {
+        padding: 50px 0 0 0;
+        &__title {
+            font-size: 42px;
+            line-height: 60px;
+        }
+        &__list {
+            margin-top: 25px;
+            &-person {
+                min-height: 500px;
+                &:not(:first-child) {
+                    margin-top: 50px;
+                }
+                &-title {
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+                &-content {
+                    margin-top: 25px;
+                    flex-flow: column nowrap;
+                }
+                &-descr {
+                    max-width: 100%;
+                    font-size: 18px;
+                    line-height: 27px;
+                    &-quote {
+                        margin-top: 10px;
+                    }
+                }
+                &-info {
+                    margin-top: 25px;
+                    max-width: 100%;
+                    &-photo {
+                        height: 400px;
+                    }
+                    &-actions {
+                        margin: 25px auto 0;
+                        max-width: calc(100% - 30px);
+                    }
+                }
+            }
+            &-btn {
+                max-width: 250px;
+                min-height: 60px;
+                font-size: 20px;
+                line-height: 30px;
+                &:hover {
+                    background-color: $yellow;
+                }
+            }
+        }
+    }
+    .course {
+        &__icons {
+            &-icon {
+                max-width: 120px;
+                height: 130px;
+            }
+        }
+        &__cards {
+            &-card {
+                margin: 50px auto 0;
+                &:hover {
+                    transform: unset;
+                }
+            }
+        }
+        &__card {
+            &-btn {
+                &:hover {
+                    background-color: $white;
+                }
             }
         }
     }
@@ -1272,6 +1420,40 @@
                     font-size: 18px;
                     line-height: 24px;
                 }
+            }
+        }
+    }
+    .team {
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        &__list {
+            &-person {
+                &-descr {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                &-info {
+                    max-width: 500px;
+                    &-photo {
+                        height: 300px;
+                    }
+                }
+            }
+            &-btn {
+                max-width: 130px;
+                min-height: 50px;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+    .course {
+        &__icons {
+            flex-flow: row wrap;
+            &-icon {
+                margin-right: 25px;
             }
         }
     }
