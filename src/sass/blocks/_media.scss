@@ -261,6 +261,7 @@
     .course {
         &__cards {
             justify-content: space-around;
+            flex-flow: row wrap;
         }
     }
 }
