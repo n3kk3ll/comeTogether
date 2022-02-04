@@ -652,6 +652,12 @@
             }
         }
     }
+    .rules {
+        &__title {
+            font-size: 42px;
+            line-height: 60px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1137,6 +1143,13 @@
             }
         }
     }
+    .rules {
+        padding: 50px 0 0 0;
+        &__inner {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1456,6 +1469,12 @@
             &-icon {
                 margin-right: 25px;
             }
+        }
+    }
+    .rules {
+        &__title {
+            font-size: 32px;
+            line-height: 48px;
         }
     }
 }

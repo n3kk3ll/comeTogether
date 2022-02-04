@@ -1,0 +1,44 @@
+.rules {
+    min-height: 1200px;
+    padding: 65px 0 0 0;
+    &__title {
+        font-size: 48px;
+        line-height: 65px;
+    }
+    &__inner {
+        margin-top: 25px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    &__price-list, &__abonements, &__list {
+        &-title {
+            font-weight: 400;
+        }
+    }
+    &__price-list {
+        &-items {
+            list-style: none;
+            &-item {
+                &-title {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    &__abonements {
+        &-title {
+            margin-top: 1em;
+        }
+        &-items {
+            list-style: none;
+        }
+    }
+    &__list {
+        margin-top: 1em;
+        list-style-position: inside;
+        counter-reset: rules;
+        &-title {
+            margin-top: 1em;
+        }
+    }
+}
