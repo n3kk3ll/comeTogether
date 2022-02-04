@@ -1,0 +1,88 @@
+.teacher {
+    padding: 65px 0 0 0;
+    &__title {
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 66px;
+    }
+    &__inner {
+        margin-top: 25px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    &__bio {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        min-height: 374px;
+        &-descr {
+            margin-right: 25px;
+            max-width: 442px;
+            width: 100%;
+            font-size: 24px;
+            line-height: 33px;
+        }
+        &-picture {
+            max-width: 603px;
+            width: 100%;
+            height: 374px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+    }
+    &__video {
+        margin-top: 95px;
+        width: 100%;
+        min-height: 539px;
+        border-radius: 20px;
+    }
+    &__descr {
+        margin-top: 67px;
+        font-size: 24px;
+        line-height: 33px;
+        &-text {
+            &:not(:first-child) {
+                margin-top: 50px;
+            }
+        }
+        &-photo {
+            margin-top: 52px;
+            width: 100%;
+            height: 710px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+    }
+    &__call {
+        margin: 50px auto 0;
+        display: block;
+        max-width: 1000px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+    }
+    &__btn {
+        margin: 40px auto 0;
+        background-color: $yellow;
+        max-width: 265px;
+        width: 100%;
+        min-height: 74px;
+        border-radius: 20px;
+        &:hover {
+            background-color: $lightYellow;
+        }
+        &:active {
+            background-color: $deepYellow;
+        }
+    }
+}
