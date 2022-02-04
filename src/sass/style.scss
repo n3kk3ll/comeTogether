@@ -1,11 +1,12 @@
-@import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Roboto+Slab:wght@700&display=swap');
+@import "libs/bootstrap-reboot.min";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Roboto+Slab:wght@700&display=swap");
 
-@import 'base/variables';
-@import 'base/mixins';
+@import "base/variables";
+@import "base/mixins";
 
-html, body {
-    font-family: 'Open Sans', sans-serif;
+html,
+body {
+    font-family: "Open Sans", sans-serif;
     color: $black;
     height: 100%;
 }
@@ -38,7 +39,15 @@ section {
     padding: 0 10px;
 }
 
-ul,ol,p {
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
@@ -47,7 +56,8 @@ ul,ol,p {
     @include btnLayout;
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
     font-weight: 700;
     margin: 0;
     text-align: center;
@@ -68,32 +78,34 @@ ul,ol,p {
         opacity: 1;
     }
     svg {
-        transition: all .5s ease;
+        transition: all 0.5s ease;
         width: 100%;
         height: 100%;
     }
 }
 
-@import 'blocks/index/header';
-@import 'blocks/index/promo';
-@import 'blocks/index/test-lesson';
-@import 'blocks/index/courses';
-@import 'blocks/index/carousel';
-@import 'blocks/index/advantages';
-@import 'blocks/index/pricing';
-@import 'blocks/index/request';
-@import 'blocks/index/footer';
-@import 'blocks/vocal/header';
-@import 'blocks/vocal/vocal-article';
-@import 'blocks/vocal/learn';
-@import 'blocks/vocal/teachers';
-@import 'blocks/piano/piano-article';
-@import 'blocks/guitar/guitar-article';
-@import 'blocks/actor/actor-article';
-@import 'blocks/about/about';
-@import 'blocks/404';
-@import 'blocks/request/request__block';
-@import 'blocks/contacts/contacts';
-@import 'blocks/team/team';
-@import 'blocks/course/course';
-@import 'blocks/media';
+@import "blocks/index/header";
+@import "blocks/index/promo";
+@import "blocks/index/test-lesson";
+@import "blocks/index/courses";
+@import "blocks/index/carousel";
+@import "blocks/index/advantages";
+@import "blocks/index/pricing";
+@import "blocks/index/request";
+@import "blocks/index/footer";
+@import "blocks/vocal/header";
+@import "blocks/vocal/vocal-article";
+@import "blocks/vocal/learn";
+@import "blocks/vocal/teachers";
+@import "blocks/piano/piano-article";
+@import "blocks/guitar/guitar-article";
+@import "blocks/actor/actor-article";
+@import "blocks/about/about";
+@import "blocks/404";
+@import "blocks/request/request__block";
+@import "blocks/contacts/contacts";
+@import "blocks/team/team";
+@import "blocks/course/course";
+@import "blocks/rules/rules";
+@import "blocks/teacher/teacher";
+@import "blocks/media";
