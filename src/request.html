@@ -75,8 +75,8 @@
                             Заявка на пробне заняття
                         </h2>
                         <form action="#" class="request__form request__block-form">
-                            <input class="request__form-name request__block-form-name" type="text" name="name" id="name" minlength="2" maxlength="50" placeholder="Ім’я">
-                            <input class="request__form-phone request__block-form-phone" type="tel" name="phone" id="phone" placeholder="Телефон">
+                            <input class="request__form-name request__block-form-name required" type="text" name="name" id="name" minlength="2" maxlength="50" placeholder="Ім’я" required>
+                            <input class="request__form-phone request__block-form-phone required" type="tel" name="phone" id="phone" placeholder="Телефон" required>
                             <input class="btn request__form-btn" type="submit" value="Записатись">
                         </form>
                     </div>
@@ -138,7 +138,8 @@
         </footer>
 
     </div>
-
+    <script src="js/imask.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/script.js"></script>
 </body>
 
