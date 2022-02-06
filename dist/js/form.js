@@ -12,7 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
         let error = validateForm(form);
 
         if (error === 0) {
-            alert('Дані надіслані. Чекайте зворотного зв\'язку'); // should make success page instead
             
             let req = new XMLHttpRequest();
             req.open('POST', 'mail.php', true);
@@ -23,17 +22,16 @@ window.addEventListener('DOMContentLoaded', () => {
                         localStorage.setItem(key, json[key]);
                     }
                 } else {
-                    alert("Помилка сервера. Номер: " + req.status);
+                    window.location.href = '404.html';
                 }
             };
             req.onerror = () => {
-                alert("Помилка надсилання запиту");
+                window.location.href = '404.html';
             };
             req.send(new FormData(form));
 
             e.target.reset();
-        } else {
-            alert('Виникла помилка. Будь ласка, перевірте правильність заповнення форми!');
+            window.location.href = 'success.html';
         }
     }
 
@@ -62,6 +60,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function addErrorClass(input) {
         input.classList.add('input__error');
+        insertErrorText(input);
+    }
+
+    function insertErrorText(input) {
+        input.insertAdjacentHTML('afterend', '<span class="input__error-text">Будь ласка, перевірте правильність заповнення форми</span>');
+        if (input.nextSibling.classList.contains('input__error-text')) {
+            input.nextSibling.nextSibling.remove();
+        }
     }
 
     function removeErrorClass(input) {
