@@ -13,7 +13,9 @@
         flex-flow: row nowrap;
     }
     &__form {
-        flex: 0 1 648px;
+        flex: 0 1 auto;
+        max-width: 650px;
+        width: 100%;
         min-height: 440px;
         @include formLayout;
         &-name,
@@ -41,11 +43,19 @@
             }
         }
         input {
-            &.error {
+            &.input__error {
                 border-bottom: 1px solid #f00;
                 color: #f00;
                 font-weight: 700;
             }
+        }
+        .input__error-text {
+            padding: 5px 0 0 10px;
+            display: inline-block;
+            font-weight: 700;
+            color: #f00;
+            font-size: 16px;
+            line-height: 24px;
         }
     }
     &__info-list {
