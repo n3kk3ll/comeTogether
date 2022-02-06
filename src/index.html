@@ -447,8 +447,8 @@
                     </h2>
                     <div class="request__inner">
                         <form action="#" class="request__form">
-                            <input class="request__form-name" type="text" name="name" id="name" minlength="2" maxlength="50" placeholder="Ім’я">
-                            <input class="request__form-phone" type="tel" name="phone" id="phone" placeholder="Телефон">
+                            <input class="request__form-name required" type="text" name="name" id="name" minlength="2" maxlength="20" placeholder="Ім’я" required>
+                            <input class="request__form-phone required" type="tel" name="phone" id="phone" placeholder="Телефон" required>
                             <input class="btn request__form-btn" type="submit" value="Записатись">
                         </form>
                         <ul class="request__info-list">
@@ -535,6 +535,8 @@
     </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/imask.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/script.js"></script>
 </body>
 
