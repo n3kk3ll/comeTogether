@@ -41,7 +41,7 @@
             }
         }
         input {
-            &.error {
+            &.input__error {
                 border-bottom: 1px solid #f00;
                 color: #f00;
                 font-weight: 700;
